@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "image": "/dataImages/omnifood.png",
+        "subHeading": "Featured Project",
+        "title": "Omnifood",
+        "description": "The smart 365 days per year food subscription that will make you eat health again.Tailored to your personal tastes and nutritional needs with around the clock delivery Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need no matter what diet you follow",
+        "technologies":  [ "Html", "Css", "Illustrator","Javascript"],
+        "url":"https://github.com/eddy8991?tab=repositories"
+    },
+    {
+        "id": 2,
+        "image": "/dataImages/littlegig.png",
+        "subHeading": "Featured Project",
+        "title": "LittleGig",
+        "description": "This is a location based social platform that allows people to instantly share their experiences on various events,corporate/commercial. It is a new take on digital interaction where we enhance physical interaction using AI, machine learning and location to match people with exciting activities around them and new friends.",
+        "technologies": ["kotlin", "java", "html", "css","firebase","C++"],
+        "url": "https://littlegig.co/"
+    },
+    {
+        "id": 3,
+        "image": "dataImages/subsonic.png",
+        "subHeading": "Featured Project",
+        "title": "SubSonic",
+        "description": "Dynamic Ecommerce web app designed with simlicity in mind to create great user experience.With the help of Sanity the web app can be whatever you want it to be upload photos of your products and details onto sanity,it is easy to manage and change as per the users liking.Great animations and it is relatively fast.",
+        "technologies": ["NextJ", "css", "Stripe", "Sanity"],
+        "url":"https://github.com/eddy8991?tab=repositories"
+    }
+]

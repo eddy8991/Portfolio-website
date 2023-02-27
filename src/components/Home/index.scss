@@ -1,0 +1,151 @@
+.home-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100vw;
+	max-height: 100vh;
+	.text-zone {
+		align-self: center;
+		padding-left: 100px;
+		width: 60%;
+		h1 {
+			color: #fff;
+			font-size: 70px;
+			line-height: 53px;
+			margin: 0;
+			font-family: 'Coolvetica';
+			font-weight: 400;
+
+			&:before {
+				content: '<h1>';
+				font-family: 'La Belle Aurore', cursive;
+				color: #00c97c;
+				font-size: 18px;
+				position: absolute;
+				margin-top: -40px;
+				opacity: 0.6;
+			}
+
+			&:after {
+				content: '<h1/>';
+				font-family: 'La Belle Aurore', cursive;
+				color: #00c97c;
+				font-size: 18px;
+				position: absolute;
+				margin-top: 18px;
+				margin-left: 20px;
+				animation: fadeIn 1s 1.7s backwards;
+				opacity: 0.6;
+			}
+
+			img {
+				margin-left: 20px;
+				opacity: 0;
+				position: relative;
+				top: 5px;
+				width: 56px;
+				height: auto;
+				animation: rotateIn 1s linear both;
+				animation-delay: 1.4s;
+			}
+		}
+
+		h2 {
+			color: #8d8d8d;
+			margin-top: 20px;
+			font-weight: 400;
+			font-size: 15px;
+			font-family: sans-serif;
+			letter-spacing: 3px;
+			animation: fadeIn 1s 1.8s backwards;
+		}
+
+		.flat-button {
+			color: #00c97c;
+			font-size: 13px;
+			font-weight: 400;
+			letter-spacing: 4px;
+			font-family: sans-serif;
+			text-decoration: none;
+			padding: 10px 18px;
+			border: 1px solid #00c97c;
+			margin-top: 25px;
+			float: left;
+			animation: fadeIn 1s 2s backwards;
+			white-space: nowrap;
+			transition: all 0.4s ease-in;
+
+			&:hover {
+				background: #00c97c;
+				color: #333;
+			}
+		}
+	}
+	.img-container {
+		height: 100vh;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.solid-logo {
+			width: 50%;
+			align-self: center;
+			transform: rotateZ(30deg) !important;
+			z-index: 1;
+			animation: fadeIn 10s;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.home-page {
+		.text-zone {
+			h1 {
+				font-size: 38px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.tags,
+	.home-page h1:before,
+	.home-page h1:after {
+		display: none;
+	}
+
+	.home-page {
+		flex-direction: column;
+		.text-zone {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-left: 8px;
+			padding-right: 8px;
+			padding-top: 60px;
+			width: 100%;
+			box-sizing: border-box;
+
+			h1 {
+				font-size: 50px;
+				align-self: flex-start;
+				padding-left: 20px;
+			}
+
+			h2 {
+				align-self: flex-start;
+				font-size: 12px;
+				padding-left: 20px;
+			}
+		}
+
+		.img-container {
+			height: fit-content;
+			.solid-logo {
+				align-self: flex-start;
+				padding-top: 30px;
+			}
+		}
+	}
+}

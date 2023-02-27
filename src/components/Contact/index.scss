@@ -1,0 +1,234 @@
+.contact-page {
+	display: flex;
+	align-items: center;
+	max-height: 100vh;
+	width: 100vw;
+	opacity: 0;
+	z-index: 1;
+	transform-style: preserve-3d;
+	animation: fadeIn 1s forwards;
+	animation-delay: 1s;
+
+	.text-zone {
+		width: 50%;
+		padding: 7%;
+		vertical-align: middle;
+		display: table-cell;
+		max-height: 90%;
+
+		h1 {
+			font-size: 53px;
+			font-family: 'Coolvetica';
+			color: #12cf80;
+			font-weight: 400;
+			margin-top: 0;
+			position: relative;
+			margin-bottom: 40px;
+			left: -10px;
+
+			&:before {
+				content: '<h1>';
+				font-family: 'La Belle Aurore', cursive;
+				color: #00ff6a;
+				font-size: 18px;
+				position: absolute;
+				margin-top: -10px;
+				left: -10px;
+				opacity: 0.6;
+				line-height: 18px;
+			}
+
+			&:after {
+				content: '<h1/>';
+				font-family: 'La Belle Aurore', cursive;
+				color: #00ff88;
+				font-size: 18px;
+				line-height: 18px;
+				position: absolute;
+				left: 50%;
+				bottom: -20px;
+				margin-left: 20px;
+				opacity: 0.6;
+			}
+		}
+
+		p {
+			font-size: 13px;
+			color: #fff;
+			font-family: sans-serif;
+			font-weight: 300;
+			max-width: fit-content;
+			animation: pulse 1s;
+			&:nth-of-type(1) {
+				animation-delay: 1.1s;
+			}
+			&:nth-of-type(2) {
+				animation-delay: 1.2s;
+			}
+			&:nth-of-type(3) {
+				animation-delay: 1.3s;
+			}
+		}
+	}
+
+	.text-animate-hover {
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.contact-form {
+	width: 100%;
+	margin-top: 20px;
+
+	ul {
+		padding: 0;
+		margin: 0;
+
+		li {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			margin-bottom: 10px;
+			opacity: 0;
+			overflow: hidden;
+			display: block;
+			clear: both;
+			position: relative;
+			animation: fadeInUp 2s 2s;
+			animation-fill-mode: forwards;
+		}
+
+		li.half {
+			width: 49%;
+			margin-left: 2%;
+			float: left;
+			clear: none;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	input[type='text'],
+	input[type='email'] {
+		width: 100%;
+		border: 0;
+		background: #333333;
+		height: 50px;
+		font-size: 16px;
+		color: #fff;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	textarea {
+		width: 100%;
+		border: 0;
+		background: #333333;
+		height: 50px;
+		font-size: 16px;
+		color: #fff;
+		padding: 20px;
+		box-sizing: border-box;
+		min-height: 150px;
+	}
+
+	.flat-button {
+		color: #00d672;
+		font-size: 11px;
+		letter-spacing: 3px;
+		text-decoration: none;
+		padding: 8px 10px;
+		border: 1px solid #02b973;
+		float: left;
+		border-radius: 4px;
+		background: 0 0;
+		text-transform: uppercase;
+		float: right;
+		text-align: center;
+		margin-right: 10px;
+		transition: all 0.4s ease;
+
+		&:hover {
+			background: #00ac56;
+			color: #333333;
+		}
+	}
+}
+
+.map-wrap {
+	background: rgba(8, 253, 216, 0.1);
+	width: 53%;
+	height: 90%;
+}
+
+.leaflet-container {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation: backInRight 1s 1.2s;
+	animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 800px) {
+	.contact-page {
+		.text-zone {
+			padding: 0;
+			padding-left: 85px;
+			padding-right: 10px;
+
+			h1 {
+				margin-bottom: 15px;
+				font-size: 40px;
+				padding-left: 10px;
+				&:before {
+					left: 5px;
+				}
+				&:after {
+					bottom: -10px;
+				}
+			}
+		}
+		.map-wrap {
+			height: 100%;
+		}
+	}
+}
+@media screen and (max-width: 450px) {
+	.contact-page {
+		flex-direction: column;
+		gap: 15px;
+		max-height: 100vh;
+		width: 100%;
+		.text-zone {
+			padding-left: 8px;
+			padding-right: 8px;
+			margin-top: 20px;
+			width: 100%;
+			box-sizing: border-box;
+			padding-top: 30px;
+			h1 {
+				font-size: 50px;
+				align-self: flex-start;
+				padding-left: 10px;
+				margin-bottom: 0;
+				&:before {
+					left: 5%;
+				}
+				&:after {
+					left: 65%;
+					bottom: -10px;
+				}
+			}
+			p {
+				align-self: flex-start;
+			}
+		}
+		.map-wrap {
+			display: none;
+		}
+	}
+}
