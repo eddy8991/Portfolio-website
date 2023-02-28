@@ -4,7 +4,6 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useState } from 'react';
 import { useEffect} from 'react';
-import Loader from 'react-loaders';
 import LogoS from '../../assets/images/logo-s.png'
 
 
@@ -63,8 +62,7 @@ const Home = () => {
                     alt="JavaScript,  Developer"
                 />
           </div>
-       
-                {/* <Loader type='pacman' />     */}
+          
         </div>
     )
 }
