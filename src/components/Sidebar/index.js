@@ -73,7 +73,7 @@ const Sidebar = () => {
         
         <div className='mobileLinks'>
           <a
-            href="https://www.linkedin.com/in/eddy-mwas-5b2141235/"
+            href="https://www.linkedin.com/in/edwin-kahiga"
             target="_blank"
             rel="noreferrer"
           >
@@ -99,7 +99,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://github.com/eddy8991"
+            href="https://www.linkedin.com/in/edwin-kahiga"
             target="_blank"
             rel="noreferrer"
           >
