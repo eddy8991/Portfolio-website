@@ -172,6 +172,14 @@
 	.portfolio-page {
 		padding-top: 30px;
 		max-height: 100vh;
+		.text-zone{
+			.h1{
+				&::after{
+					bottom: -10px;
+					margin-left: 10px;
+				}
+			}
+		}
 		.rightArrow {
 			padding-top: 15px;
 			.scroll-direction {
