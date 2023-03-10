@@ -13,19 +13,7 @@ const Home = () => {
 
   
     const nameArray = ['d','w','i','n']
-    const jobArray=[   'w','e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',]
+    const jobArray=[   'w','e','b',' ','d','e','v','e','l','o','p','e','r','.',]
     
         useEffect(() => {
             setTimeout(() => {
