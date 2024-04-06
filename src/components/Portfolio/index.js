@@ -75,6 +75,7 @@ const Portfolio = () => {
             />
           </div>
     </div>
+    <Loader type= "ball-beat"/>
     </>
      )
 }
